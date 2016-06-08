@@ -97,6 +97,7 @@ def addSimpleBCElements(nameList):
     ])
 @addSimpleBCElements([
     'MRT',
+    'BGK',
     'RightSymmetry',
     'TopSymmetry',    
     'BottomSymmetry',    
@@ -119,6 +120,7 @@ class CLBConfigWriter:
         self.root.set("output", "output/")
         self.geometry.set("predef", "none")
         self.geometry.set("model", "MRT")        
+	self.geometry.set("model", "BGK")	
 
         self.current_geometry = self.geometry
         

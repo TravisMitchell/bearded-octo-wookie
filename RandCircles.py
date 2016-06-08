@@ -36,6 +36,7 @@ def RandCircles(NX,NY,nbubbles,radius):
         randPoints.append((x,y))
         i += 1
         excluded.update((x+dx, y+dy) for (dx,dy) in delta)
+	print "\n Circle Found"
 #    for i in range(n):
 #        print randPoints[i]
 #    print excluded
